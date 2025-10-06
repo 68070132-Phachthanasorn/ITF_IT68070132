@@ -1,32 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITFwebsite</title>
+    <title>ITF Simple Bank</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav>
         <p>68070132</p>
         <h2>ITF Website</h2>
         <p>Week14</p>
     </nav>
-    <img src="https://cdn.theatlantic.com/thumbor/Bo6F3I96guOTvccJ7MWkv94RuqM=/38x18:998x558/960x540/media/img/mt/2014/11/penguins_madagascar/original.jpg" width="350">
-    <h2>ITF Simple Thief</h2>
-    <p>Welcome to my first HTML + CSS + JS Website!</p>
-    <textarea id="" name="" rows="4" cols="50">typehere</textarea>
-    <div>
-        <h2>Account Overview</h2>
-        <h3>Account Information</h3>
-        <p>Name: Phachthanasorn Peerawatkul</p>
-        <p>Type: Homeless</p>
-        <h3>Balance Information</h3>
-        <p>Current account</p>
-        <p>Type: Homeless</p>
-        Enter number: <input type="number" id="myinput" value="0">
-        <button onclick="add()">+1</button>
-    </div>
-    <script src="script.js"></script>
+    <div class="distance">
+        <div class="intro">
+            <img src="https://cdn.theatlantic.com/thumbor/Bo6F3I96guOTvccJ7MWkv94RuqM=/38x18:998x558/960x540/media/img/mt/2014/11/penguins_madagascar/original.jpg"
+                width="325">
+            <div class="distance boxv2">
+                <h2>ITF Simple Bank</h2>
+                <p>Welcome to my first HTML + CSS + JS Website!</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <textarea readonly>1, Current account balance: 1000, Current cash balance: 1000</textarea>
+            <div class="container">
+                <div class="box">
+                    <div>
+                        <h2>Account Overview</h2>
+                    </div>
+                    <div class="intro">
+                        <img src="Account.png" width="100">
+                        <div class="distance">
+                            <h3>Account Information</h3>
+                            <p>Name: Phachthanasorn Peerawatkul</p>
+                            <p>Type: Savings Account</p>
+                        </div>
+                    </div>
+                    <div class="intro">
+                        <img src="Balance.png" width="100">
+                        <div class="distance">
+                            <h3>Balance Information</h3>
+                            <div>
+                                <p>Current account balance:</p>
+                                <input type="text" value="1000" width="100" readonly>
+                            </div>
+                            <div>
+                                <p>Current cash balance:</p>
+                                <input type="text" value="1000" readonly>
+                                <button>Change</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro">
+                        <img src="bankbank.png" width="100">
+                        <div class="distance">
+                            <h3>Bank Operation</h3>
+                            <select id="WithdrawDeposit">
+                                <option value="Deposit">Deposit</option>
+                                <option value="Withdraw">Withdraw</option>
+                            </select>
+                            <input type="number" id="currencyinput" value="1" min="1">
+                            <button onclick="convert()">Proceed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <h2>Financial Tools</h2>
+                    </div>
+                    <div class="intro">
+                        <img src="https://img.freepik.com/free-vector/pile-coins-money-dollars-icons_24877-83453.jpg?semt=ais_hybrid&w=740&q=80"
+                            width="100">
+                        <div class="distance">
+                            <h3>Currency Converter</h3>
+                            <p>Input balance:</p>
+                            <input type="number" id="input" value="0">
+                            <p>Output balance:</p>
+                            <input type="number" id="output" value="0" readonly>
+                            <p>Input currency:</p>
+                            <select id="currency">
+                                <option value="USD">USD</option>
+                                <option value="THB">THB</option>
+                            </select>
+                            <button onclick="convert()">Convert</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <script src="script.js"></script>
+    </div>  
 </body>
+
 </html>
